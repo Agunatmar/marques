@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+   <title>Simulador de Plazo Fijo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+     <!-- Favicon -->
+     <link rel="icon" href="img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" role="navigation">
+     <a class="navbar-brand" href="#top">
+                <img alt="Plazofijo.com" src="img/logo.png">
+            </a>
+  
+</header>
+    <div class="container">
+      
+        <!-- Third Featurette -->
+        <div class="row">
+           <div class="col-lg-5 c1">
+             <h1 class="title">Simule su Plazo Fijo</h1>
+             <div role="alert">
+ 	 <p class="lead">Desde nuestro sitio usted podrá realizar el cálculo de su plazo fijo tan solo completando el formulario que aparece a continuación. Primero, seleccione el <strong>banco</strong> con el cuál desea realizar el cálculo y automáticamente le será indicada la <strong>TNA</strong> que el mismo ofrece. Luego ingrese el <strong>capital en pesos</strong> que desea invertir, seguido del <strong>plazo en días</strong>. Al presionar el botón de <strong>"calcular",</strong> la aplicación le indicará la <strong>ganancia en $ y en %.</strong> </p>
+				 <p class="lead">Si la calculadora le regresa un mensaje de <strong>error (NaN)</strong> presione el boton de <strong>"resetear"</strong> para volver a intentarlo.</p><br>
+  	<p class="lead blue">A continuación observará una tabla con las distintas TNA que ofrece cada banco banco:</p>
+  	<ul class="lead">
+  	<li>Banco Nación: <strong>19,22%</strong></li>
+  		<li>Santander Río: <strong>24,50%</strong></li>
+  			<li>Galicia: <strong>21,50%</strong></li>
+  				<li>HSBC: <strong>20,32%</strong></li>
+  	
+  </ul>
+  </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+           
+           	
+           			<div class="col-lg-6 bc">
+           <form id="formEjemplo" >
+				<div class="form-group">
+				
+					<label for="lblbanco">Banco:</label>
+					<select onChange="ActualizarTNA()" class="form-control" id="banco" name="banco" required>
+						<option value="" selected>Selccionar el banco</option>
+						<option value="19.22%">Banco Nación</option>
+						<option value="24.50%">Santander Río</option>
+						<option value="21.50%">Galicia</option>
+						<option value="20.32%">HSBC</option> 
+					</select>
+					<br>	
+					
+					<label  id="lbltna">TNA (%): </label>
+					
+					<label type="number" name="tna" id="tna" class="form-control tna"></label>
+					<br>
+					<label for="capital">Capital ($): </label>
+					<input type="number" name="capital" id="capital" placeholder="Introducir solo números (Ej: 10000)" class="form-control" required/>					
+					<br>
+					<label for="dias">Plazo (en días): </label>
+					<input type="number" name="dias" id="dias" placeholder="Introducir el plazo en días (Ej: 90)" class="form-control" required/>
+					<br>
+					<br>
+					
+					<div class="cuadro2">
+					<label id="lblInteres">INTERESES:</label><br>
+					<p id="signo">$</p><label type="number" id="interes"></label></div>
+					<br>
+					<div class="cuadro2">
+					<label id="lblPorcentaje">GANANCIA:</label><br>
+					<label type="number" id="porcentaje"></label><p id="signo2">%</p>
+					</div>
+					
+				</div>
+				
+  			</form>
+  			
+			<button id="calcula" type="submit" class="btn btn-primary btn-lg btn-block" ><strong>CALCULAR</strong></button>		
+          
+             <button id="btnLimpiar" type="reset" value="reset" class="btn btn-secondary btn-lg btn-block"><strong>RESETEAR</strong></button>
+             
+  
+			</div>
+  
+    </div>
+      <hr class="featurette-divider"> 
+		    <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                	<p>&copy; 2018 Resolución del ejercicio enviado por Gestión Compartida. Realizado por Agustina Marqués - Todos los derechos reservados.</p>
+                </div>
+            </div>
+</footer>
+</div>
+	
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+	<script  src="js/acciones.js" type="text/javascript">
+		
+	</script>
+  
+    </body>
+</html>

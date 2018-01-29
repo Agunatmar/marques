@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body {
+	color: ffffff;
+}
+
+/*NAVBAR*/
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 35px;
+}
+
+.bd-navbar {
+    min-height: 5rem;
+    background-color: #3b6fbc;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+/*TITLE*/
+
+.title {
+	margin-bottom: 30px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+	color: #3b6fbc;
+}
+
+/*1ER CUADRO*/
+
+li  {
+	line-height: 250%;
+}
+
+.lead {
+	color:#313131;
+	font-size: 1.2em;
+}
+
+.blue
+ {
+	color: #3B6FBC;
+	 font-weight: bold;	
+}
+
+
+
+/*FORM*/
+
+.bc {
+	background-color: #1d5582;
+	color: #ffffff;
+	margin-top: 20px;
+	padding: 20px 30px 30px 30px;
+	border-radius: 10px;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+}
+
+.tna {
+	border: 0; 
+	box-shadow: none;
+	background-color: #96bad7;
+	color: #0c395d;
+	font-weight: bold;
+}
+
+.form-group {
+	padding-top: 20px;
+}
+
+#calcula:focus{
+	background-color: #D99100;
+	
+}
+
+#banco:hover{ 
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+#banco:focus{
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+#capital:hover{
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+#capital:focus{
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+#dias:hover{
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+#dias:focus{
+	border: solid 2px;
+	border-color: #FFD600;
+}
+
+
+#interes {
+	color: #FFDA3E;
+	font-size: 1.5em;
+}
+
+#porcentaje {
+	color: #FFDA3E;
+	font-size: 1.5em;
+}
+
+#signo {
+	display: inline;
+	color: #FFDA3E;
+	font-size: 1.5em;
+	visibility: hidden;
+}
+
+#signo2 {
+	display: inline;
+	color: #FFDA3E;
+	font-size: 1.5em;
+	visibility: hidden;
+}
+
+.btn-block+.btn-block {
+	color: #ffffff;
+}
+.btn-primary {
+	margin-bottom: 15px;
+}
+.btn-primary:hover {
+	background-color:#D08B00;
+}
+.btn-primary:focus {
+	background-color:#D08B00;
+	border-color: #9E6A00;
+}
+
+.btn-secondary {
+	background-color: #19B6FA;
+	color: #ffffff;
+}
+
+.btn-secondary:hover {
+	background-color: #1598D1;	
+	color: #ffffff;
+}
+
+
+.cuadro2 {
+	background-color: #12334E;
+	border-radius: 5px;
+	padding: 12px 10px 5px 15px
+}
+
+/*MEDIA Q*/
+
+@media screen and (max-width: 834px) {
+    .c1 {
+        margin-left: 5%;
+		margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .bc {
+        margin-left: 5%;
+		margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .navbar-brand {
+       padding-left: 5%;
+
+    }
+}
